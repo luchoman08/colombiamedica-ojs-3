@@ -183,6 +183,9 @@ class SubmissionFileManager extends BaseSubmissionFileManager {
 
 		// Now insert the row into the DB and get the inserted file id.
 		$insertedFile = $submissionFileDao->insertObject($destFile, $destPath);
+                if ($insertedFile == null) {
+                        return [];
+                }
 
 		return array($insertedFile->getFileId(), $insertedFile->getRevision());
 	}
