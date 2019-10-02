@@ -128,7 +128,7 @@ sitewide_privacy_statement = Off
 
 [database]
 
-driver = mysql
+driver = postgres
 host = localhost
 username = ojs
 password = ojs
@@ -138,7 +138,7 @@ name = ojs
 persistent = Off
 
 ; Enable database debug output (very verbose!)
-debug = Off
+debug = On
 
 ;;;;;;;;;;;;;;;;;;
 ; Cache Settings ;
@@ -477,10 +477,10 @@ xslt_command = ""
 ; Display a stack trace when a fatal error occurs.
 ; Note that this may expose private information and should be disabled
 ; for any production system.
-show_stacktrace = Off
+show_stacktrace = On
 
 ; Display an error message when something goes wrong.
-display_errors = Off
+display_errors = On 
 
 ; Display deprecation warnings
 deprecation_warnings = Off
